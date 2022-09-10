@@ -1,4 +1,4 @@
-const heros = {
+const heroes = {
       capi: {
             nombre: 'Capitan América',
             poder: 'Aguantar inyecciones sin morir'
@@ -13,9 +13,14 @@ const heros = {
       }
 }
 
-const buscarHeroe = (id, callback) => {
+export const buscarHeroe = (id, callback) => {
 
       const heroe = heroes[id];
-      callback(heroe);
+      if (heroe){
+            callback(null, heroe);
+      }else{
+            callback('el heroe no llegó');
+      }
+      
 
 }
