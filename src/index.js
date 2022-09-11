@@ -1,6 +1,7 @@
 import './styles.css';
 // import { promesaLenta, promesaMedia, promesaRapida } from './js/Promesas';
 import { buscarHeroe,buscarHeroeAsync } from './js/Promesas';
+import { obtenerHeroesArr } from './js/await';
 // promesaLenta.then(console.log);
 // promesaMedia.then(console.log);
 // promesaRapida.then(console.log);
@@ -17,3 +18,4 @@ import { buscarHeroe,buscarHeroeAsync } from './js/Promesas';
 //       .then( heroe => console.log(heroe) )
 //       .catch(console.warn);
 
+obtenerHeroesArr();
